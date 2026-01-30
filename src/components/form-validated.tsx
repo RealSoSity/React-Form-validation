@@ -17,7 +17,7 @@ export const FormValidated = ({ onSubmit }: formValidatedProps) => {
     validationSchema: yup.object({
       fullName: yup.string().label("Full Name").required(),
       email: yup.string().email("Invalid email").required(),
-      age: yup.number().label("Age").min(1).max(150).required(),
+      age: yup.number().label("Age").min(10).max(99).required(),
       role: yup
         .string()
         .label("Role")
